@@ -9,7 +9,7 @@ public class EntityManagerProvider {
 
    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("messagedb");
 
-   private static EntityManager getEntityManager(){
+   public static EntityManager getEntityManager(){
        return emf.createEntityManager();
    }
 

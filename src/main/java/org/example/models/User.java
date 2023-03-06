@@ -19,7 +19,6 @@ public class User {
     private Integer id;
     private Integer phoneNumber;
     private String name;
-    private String firstName;
     private Integer age;
 
     @Override
