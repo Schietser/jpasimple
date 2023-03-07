@@ -10,7 +10,6 @@ import java.util.Objects;
 @Setter
 @ToString
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
 public class Message {
 

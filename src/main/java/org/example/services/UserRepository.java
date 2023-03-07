@@ -64,4 +64,11 @@ public class UserRepository {
         Query query = em.createQuery("SELECT id, name, phoneNumber, age FROM User");
         return query.getResultList();
     }
+
+    public Optional<User> readUserByPhoneNumber(String phoneNumber) {
+
+        EntityManager em = EntityManagerProvider.getEntityManager();
+        Query query = em.createQuery("SELECT id, name, phoneNumber, age FROM User WHERE phoneNumber = "+phoneNumber);
+        return Optional.of((User) query.getSingleResult());
+    }
 }

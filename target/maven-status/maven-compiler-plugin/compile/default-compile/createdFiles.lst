@@ -1,5 +1,8 @@
 org\example\models\User.class
+org\example\services\MessageRepository.class
 org\example\Main.class
 org\example\models\Message.class
+org\example\services\UserRepository.class
+org\example\connection\EntityManagerProvider.class
 org\example\services\UserService.class
 org\example\services\MessageService.class

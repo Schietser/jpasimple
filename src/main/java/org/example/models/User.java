@@ -11,13 +11,13 @@ import java.util.Objects;
 @Setter
 @ToString
 @NoArgsConstructor
-@AllArgsConstructor
+
 @Entity
 public class User {
     @Id
     @GeneratedValue
     private Integer id;
-    private Integer phoneNumber;
+    private String phoneNumber;
     private String name;
     private Integer age;
 
